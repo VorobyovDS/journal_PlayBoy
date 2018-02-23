@@ -1,0 +1,63 @@
+.content {
+  &__block {
+    max-width 940px
+    +do(1050px) {
+    margin 0 auto
+    }
+  }
+  &__container {
+    display flex
+    justify-content space-between
+  }
+  &__wrapper {
+
+    margin 0 auto
+    max-width 1260px
+    padding 21px 53px 0 53px
+    +do(640px) {
+      padding 21px 0 0 0
+    }
+  }
+  &__main-sidebar {
+    display flex
+    justify-content space-between
+    margin-top 20px
+    +do(640px) {
+      margin-top 0
+    }
+  }
+  &__sidebar {
+    margin-left 5px
+    flex 0 1 300px
+  }
+  &__Yandex-g {
+    margin-bottom 20px
+  }
+  &__social {
+    max-width 940px
+    display flex
+    justify-content space-between
+    margin-bottom 46px
+    margin-top 20px
+    +do(1020px) {
+      display none
+    }
+  }
+  &__Add-button {
+    text-align center
+    margin-top 40px
+    margin-bottom 122px
+  }
+  &__Add-link {
+    font-family "Roboto Condensed", sans-serif
+    font-size 30px
+    color #000000
+    line-height 0.1
+    +do(390px) {
+      line-height 0.5
+    }
+    &:hover {
+      color $color-hover-text
+    }
+  }
+}

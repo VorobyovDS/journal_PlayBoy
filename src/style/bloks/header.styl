@@ -1,0 +1,67 @@
+.header {
+    margin 0 auto
+    border-bottom 1px solid #cccccc
+    //
+  &__wrapper {
+
+    +domin(1320px) {
+      background-color $color-header
+    }
+  }
+  &__wr-content {
+    margin 0 auto
+    max-width 1260px
+  }
+  &__img-wrapper {
+    margin 0 auto
+    max-width 1320px
+
+  }
+  &__bg {
+    background-image url("../img/header/LargeHeader.png")
+    padding-top: ((739.2/1320)*100)%   //732
+    background-size: cover;
+    background-position: center;
+    +do(1024px){
+    background-image url("../img/header/MediumHeader.png")
+    padding-top: ((480/960)*100)%
+    }
+    +do(640px){
+      background-image url("../img/header/SmallHeader.png")
+      padding-top: ((356/640)*100)%
+    }
+
+
+
+
+
+
+
+
+
+
+
+    //transition 0.5s
+    //max-width 100%
+    //min-height 100%
+    //vertical-align: bottom
+    //+do(1024px) {
+    //  transition 0.5s
+    //  margin-bottom: -4.3em;
+    //}
+    //+do(800px) {
+    //  transition 0.5s
+    //  margin-bottom: -3.4em;
+    //}
+    //+do(700px) {
+    //  transition 0.5s
+    //  margin-bottom: -2.4em;
+    //}
+    //+do(640px) {
+    //  transition 0.5s
+    //  margin-bottom: 0;
+    //}
+  }
+}
+
+

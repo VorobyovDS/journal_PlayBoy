@@ -1,0 +1,156 @@
+.Title-links {
+    display flex
+    flex-direction column
+    justify-content space-between
+
+    &_news {
+      position absolute
+      left 2%
+      bottom 2%
+      max-width 795px
+      +do(640px) {
+        left 5%
+        right 5%
+      }
+    }
+    &_video {
+      position absolute
+      left 3%
+      bottom 15%
+      width 100%
+      +do(640px) {
+        left 57%
+        bottom 5%
+        transform translateX(-50%)
+      }
+  }
+    &_content-main {
+      position absolute
+      left 2%
+      bottom 16%
+    }
+  &__header-wr {
+    margin-bottom 18px
+  }
+
+  &__header {
+    font-family "Roboto Slab",serif
+    font-size 14px
+    font-weight 700
+    color #999999
+    position relative
+    text-transform uppercase
+    display inline-block
+    +do(640px){
+      font-size 24px
+    }
+    +do(480px) {
+      font-size 18px
+    }
+    +do(460px) {
+      font-size 12px
+    }
+
+    &:after {
+      content ""
+      display block
+      height 1px
+      width 28%
+      background-color #ffffff
+      position absolute
+      bottom -10px
+      transition 1s
+    }
+    &_content-main {
+      &:after {
+        background-color #000000
+      }
+    }
+    //&:hover {
+    //  color #ffffff
+    //  &:after {
+    //    transition 1s
+    //    width 100%
+    //  }
+    //}
+  }
+  &__title-description {
+    box-sizing border-box
+    font-family "PT Sans Narrow",sans-serif
+    font-weight 700
+    font-size 48px
+    color #ffffff
+    transition 0.3s
+    display inline-block
+    +do(640px) {
+      font-size 32px
+    }
+    +do(480px) {
+      font-size 24px
+    }
+    &_video {
+      font-family "Roboto Condensed", sans-serif
+      font-size 30px
+      font-weight 700
+      +do(640px) {
+        font-size 60px
+      }
+    }
+    &_content-main {
+      font-family "Roboto Condensed", sans-serif
+      font-size 30px
+      font-weight normal
+      color #000000
+    }
+    &_video-small {
+      font-size 18px
+      font-weight normal
+      +do(640px) {
+        font-size 32px
+      }
+    }
+    &-wr {
+      margin-bottom 7px
+    }
+
+  }
+  &__text {
+    line-height 1.5
+    font-family "PT Sans",sans-serif
+    font-weight normal
+    font-size 18px
+    word-wrap normal
+    &-wr {
+
+      margin-bottom 20px
+      +do(450px){
+        display none
+      }
+
+    }
+  }
+  &__links-news {
+      transition 0.3s
+      &:after {
+        position absolute
+        top 0
+        bottom 0
+        left 0
+        right 0
+        content ""
+        z-index 200
+      }
+      &:hover {
+        .Title-links__title-description {
+          color $color-hover-main
+      }
+        .Title-links__header {
+          color #ffffff
+          &:after {
+            transition 1s
+            width 100%
+          }
+        }
+    }
+  }
+  }

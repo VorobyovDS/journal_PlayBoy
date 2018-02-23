@@ -1,0 +1,79 @@
+.sidebar{
+  min-width 228px
+  +do(1024px) {
+    margin-left 20px
+  }
+  +do(760px) {
+    display none
+  }
+  &__item {
+    position relative
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    margin 20px 0
+    &_first {
+      padding 30px 0 30px 0
+      background-color #ececec
+      margin 0
+    }
+    &_picture {
+      background url("../img/content/sidebar/iphone4.png") no-repeat
+      height 620px
+      +do(1050px) {
+        display none
+      }
+
+    }
+
+  }
+  &__link-banner {
+    &:hover {
+      .sidebar__title_CyberClub {
+        &:after{
+          animation zayc 2s linear infinite
+        }
+      }
+    }
+  }
+  &__img {
+    &-wr {
+      display inline-block
+    }
+  }
+  &__title {
+    font-family "Roboto Condensed", sans-serif
+    font-size 18px
+    font-weight normal
+    max-width 196px
+    line-height 1.2
+    &_bold {
+      font-weight 700
+    }
+    &_CyberClub {
+      font-family "Open Sans"
+      font-weight 700
+      font-size 30px
+      color #ffffff
+      position absolute
+      bottom 7%
+      left 60%
+      transform translateX(-50%)
+      &:after {
+        content ""
+        background url("../img/content/sidebar/zayac.png")
+        width 45px
+        height 68px
+        position absolute
+        bottom -10px
+        left -44px
+      }
+    }
+  }
+  &__Yandex {
+    margin-left 6%
+    margin-top 38px
+  }
+
+}

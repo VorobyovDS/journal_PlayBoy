@@ -1,0 +1,66 @@
+@keyframes facebook__link {
+  0% {
+    transform: rotate(2deg)
+  }
+
+  50% {
+    transform: rotate(-2deg)
+  }
+  100% {
+    transform: rotate(2deg)
+  }
+}
+
+
+
+.facebook {
+  width 300px
+  &__header {
+    position relative
+  }
+  &__title {
+    font-family LucidaGrande,Serif
+    font-size 18px
+    font-weight 700
+    color #ffffff
+    &_small {
+      font-size 12px
+      margin-top 5px
+    }
+    &-wr {
+      width 194px
+      top 15px
+      left 67px
+      position absolute
+    }
+}
+  &__journal {
+    position absolute
+    top 9px
+    left 9px
+  }
+  &__link {
+    &:hover {
+      .facebook__img_link {
+        animation facebook__link 2s linear infinite;
+      }
+    }
+  }
+  &__img {
+  }
+  &__subscribe {
+    position absolute
+    bottom 10px
+    right 12px
+  }
+  &__text {
+    padding 15px 21px 37px 9px
+    border-bottom 1px solid #cccccc
+    border-right 1px solid #cccccc
+    border-left 1px solid #cccccc
+  }
+  &__description {
+    margin-bottom 9px
+  }
+}
+

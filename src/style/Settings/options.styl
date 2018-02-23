@@ -1,0 +1,107 @@
+//@font-face { font-family: "PT-mono-regular"; src: url('../fonts/pt-mono-regular.eot'); }
+//@font-face { font-family: "PT-mono-regular"; src: url('../fonts/pt-mono-regular.ttf'); }
+//@font-face { font-family: "Open Sans Bold"; src: url('../fonts/open-sans-bold.eot'); }
+//@font-face { font-family: "Open Sans Bold"; src: url('../fonts/open-sans-bold.ttf'); }
+//@font-face { font-family: "Open Sans Regular"; src: url('../fonts/open-sans-regular.eot'); }
+//@font-face { font-family: "Open Sans Regular"; src: url('../fonts/open-sans-regular.ttf'); }
+//@font-face { font-family: "Open Sans Light"; src: url('../fonts/open-sans-light.eot'); }
+//@font-face { font-family: "Open Sans Light"; src: url('../fonts/open-sans-light.ttf'); }
+//@font-face { font-family: "Open Sans Italic"; src: url('../fonts/open-sans-italic.eot'); }
+//@font-face { font-family: "Open Sans Italic"; src: url('../fonts/open-sans-italic.ttf'); }
+//
+//@font-face {
+//  font-family PT-mono-regular
+//  font-style normal
+//  //src: url('../fonts/pt-mono-regular.ttf')
+//  src: url('../fonts/pt-mono-regular.eot')
+//  src: url('../fonts/pt-mono-regular.ttf')
+//}
+
+@font-face {
+  font-family: LucidaGrande;
+  src: url("../fonts/LucidaGrandeBold.eot") /* EOT file for IE */
+}
+@font-face {
+  font-family: LucidaGrande;
+  src: url("../fonts/LucidaGrandeBold.ttf") /* TTF file for CSS3 browsers */
+}
+
+IMG-bg(n)
+  padding-top = n
+
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|Roboto:400|PT+Sans:400,700|Roboto+Condensed:300,400,700|Roboto+Slab:300,700&subset=cyrillic');
+
+//font-family: 'PT Sans', sans-serif;
+//font-family: 'PT Sans Narrow', sans-serif;
+//font-family: 'Roboto Condensed', sans-serif;
+//font-family: 'Roboto Slab', serif;
+
+//--------------------------- Медиа-запросы---------------
+
+  do(maxWidth)
+    @media screen and (max-width: maxWidth)
+      {block}
+
+  domin(minWidth)
+    @media screen and (min-width: minWidth)
+      {block}
+//----------------------------------------------
+
+
+
+// цвета
+$color-footer = #00075a
+$color-header = #131410
+
+$color-title = #fff; // цвет заголовка
+$color-decoration = #ededed
+$color-topMenu = #3bcc7d;
+
+$width-content = 1300px;
+$width-text-content = 900px
+
+$color-border-menu = #666666
+$color-hover = #e66685
+$color-hover-text = #e62742
+$color-hover-main = #dbc1ff
+$color-hover-main-content = #8867ff
+.content-wrapper {
+  margin 0 auto
+  max-width 1366px
+}
+
+a {
+  text-decoration none
+  color #ffffff
+  //display inline-block
+}
+  img {
+    vertical-align bottom
+    max-width 100%
+  }
+
+@keyframes zayc {
+  0% {
+
+    transform: rotate(0deg);
+  }
+
+  25% {
+
+     transform: rotate(2deg);
+  }
+
+  50% {
+     transform: rotate(0deg);
+  }
+  75% {
+     transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+

@@ -1,0 +1,43 @@
+.links-news {
+  box-sizing border-box
+  font-family "Roboto Condensed", sans-serif
+  font-size 18px
+  font-weight normal
+  max-width 300px
+  padding-left 31px
+  padding-right 30px
+  padding-top 29px
+  border 1px solid #000000
+  margin-right 2%
+  min-height 420px
+  +do(810px) {
+    max-width 100%
+    border none
+    font-size 32px
+  }
+
+
+  &__link {
+      max-width 224px
+      color #000000
+      line-height 1.35
+      position relative
+      display inline
+
+    &:hover {
+      border-bottom 1px solid #000000
+    }
+    &_special {
+      color #ff4073
+    }
+  }
+  &__item {
+
+      margin-bottom 13px
+      &_title {
+        font-family "Roboto Slab", sans-serif
+        font-weight 700
+    }
+
+  }
+}

@@ -1,0 +1,102 @@
+.instagram {
+  max-width 300px
+  border-top 1px solid #cccccc
+
+  &__item {
+    &_img-block {
+      position relative
+      display flex
+      justify-content space-between
+    }
+  }
+  &__img-wr {
+      display flex
+      flex-wrap wrap
+      justify-content space-between
+      width  150px
+
+  }
+  &__title {
+    position absolute
+    left 50%
+    transform translateX(-50%)
+    bottom 10px
+    font-family "Open Sans", sans-serif
+    font-weight 700
+    font-size 14px
+    color #ffffff
+  }
+  &__cube {
+    display flex
+    align-items center
+    justify-content center
+    position absolute
+    width 73px
+    height 73px
+    background-color #000
+    color #ffffff
+    font-family "Open Sans", sans-serif
+    font-weight 700
+    text-transform uppercase
+    text-align center
+    border 1px solid #ffffff
+    bottom -54px
+    left 13px
+
+  }
+  &__text {
+    display flex
+    justify-content space-between
+    &-wr {
+      box-sizing border-box
+      border 1px solid #cccccc
+      padding 10px 30px 12px 99px
+
+    }
+  }
+  &__count {
+    font-family "Open Sans", sans-serif
+    font-size 18px
+    font-weight 700
+    margin-bottom 7px
+    &-name {
+      font-family "Open Sans", sans-serif
+      font-size 11px
+      font-weight normal
+      margin-bottom 15px
+    }
+  }
+  &__subscribe {
+    font-family "Open Sans", sans-serif
+    font-size 12px
+    display flex
+    justify-content center
+    align-items center
+    width 95px
+    height 22px
+    background-color #00aa40
+    text-align center
+    &:hover {
+      background-color #00db4a
+    }
+  }
+  &__link {
+    overflow hidden
+    &:hover {
+      .instagram__img {
+        transform scale(1.1)
+        transition 1s
+      }
+    }
+    &_count {
+      color #000000
+      &:hover {
+        color #00aa40
+      }
+    }
+  }
+  &__img {
+    transition 1s
+  }
+
+}

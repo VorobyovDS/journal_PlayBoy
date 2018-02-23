@@ -1,0 +1,28 @@
+.Nav-Bar-Header {
+  display flex
+  position relative
+  justify-content space-between
+  align-items center
+
+
+  &__logo-img {
+    position absolute
+    left 50%
+    top 50%
+    transform translate(-50%,-50%)
+  }
+  &__search {
+    margin-left auto
+    +do(640px){
+    margin-right 10px
+  }
+  }
+  &__logo {
+
+  }
+  &__img {
+  }
+  +do(640px){
+  margin 0
+}
+}
