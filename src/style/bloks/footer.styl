@@ -12,8 +12,7 @@
     justify-content space-between
   }
   &__magazine {
-    margin-top 73px
-    margin-left 77px
+    margin-top 50px
     +do(944px) {
       margin-left 40px
       transition .3s
@@ -30,143 +29,30 @@
       display none
     }
   }
-}
-
-
-
-.footer-info {
-  padding-top 16px
-  max-width 940px
-  &__text {
-    font-family "Roboto", sans-serif
-    font-size 12px
-    color #535353
-    +do(640px) {
-      font-size 20px
-    }
-    &-wr {
-      padding 22px 0
-      border-bottom 3px solid #535353
-      border-top 3px solid #535353
-    }
-  }
-  &__title {
-    margin-bottom 30px
-    background url("../img/footer/Logo_text.png") no-repeat center
-    width 100px
-    height 15px
-    +do(640px) {
-      margin 0 auto
-      background url("../img/footer/Icon_Zayac.png") no-repeat center
-      width 100%
-      height 75px
-      padding-bottom 40px
-    }
-  }
-}
-
-.footer-info-list {
-  display flex
-  justify-content space-between
-  margin-bottom 34px
-  +do(640px) {
-    display none
-  }
-  &__item {
-    font-family "Roboto Condensed", sans-serif
-    font-size 16px
-  //max-width 118px
+  &__sidebar {
     display flex
     flex-direction column
+    align-items flex-end
+    margin-right 36px
+    //justify-content space-between
   }
-  &__link {
-    display inline-block
-    margin-bottom 12px
-    &:hover {
-      transform scale(1.1)
-      color $color-hover-text
-    }
+  &__digital-magazine {
+    margin-top 20px
+    margin-right 20px
   }
 }
 
-  .footer-social {
-    margin-top 10px
-    padding-bottom 20px
-    display flex
-    justify-content space-between
-    align-items center
-    +do(840px) {
-      flex-direction column-reverse
-    }
-    &__wr {
-      display flex
-      align-items center
-      +do(640px) {
-        flex-direction column
-      }
-    }
-    &__age {
+// блоки футера
 
-      display inline-block
-      font-family "Roboto Condensed", sans-serif
-      font-size 24px
-      font-weight 300
-      color #ff0044
-      border solid 1px #ff0044
-      padding 12px
-      +do(640px) {
-        margin 35px 0 22px 0
-      }
 
-    }
-    &__copy{
-      margin-left 24px
-      font-family "Roboto",sans-serif
-      font-size 12px
-      color #535353
-      +do(640px) {
-        font-size 18px
-      }
-    }
-    &__link {
-      font-size 12px
-      color #535353
-      border-bottom 1px solid #535353
-      +do(640px) {
-        font-size 18px
-      }
-      &:hover {
-        color #a3a3a3
-      }
-    }
-  }
-.footer-social-icon {
-  display flex
-  justify-content space-between
-  +do(640px) {
-    margin-top 69px
-    width 310px
-  }
-  &__img {
 
-    &:hover {
-      transform scale(1.2)
-      +do(640px) {
 
-        transform scale(2)
-      }
-    }
-    +do(640px) {
-      transform scale(1.9)
-    }
-    &-wr {
-      &:not(:first-child) {
-        margin-left 10px
-      }
-      &:last-child {
-        margin-right 10px
-      }
-    }
-  }
 
-}
+
+
+
+
+
+
+
+

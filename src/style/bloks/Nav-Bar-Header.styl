@@ -18,11 +18,25 @@
   }
   }
   &__logo {
-
+    +do(370px){
+    display none
+    }
   }
   &__img {
   }
   +do(640px){
   margin 0
 }
+  &__authorization {
+    +do(640px) {
+    display none
+    }
+    &-img {
+      position absolute
+      right 80px
+      top 50%
+      transform translateY(-50%)
+    }
+  }
 }
+

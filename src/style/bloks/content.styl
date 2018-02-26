@@ -14,6 +14,12 @@
     margin 0 auto
     max-width 1260px
     padding 21px 53px 0 53px
+    +do(1024px) {
+      padding 21px 11px 0 11px
+    }
+    +do(750px) {
+      padding 21px 5px 0 5px
+    }
     +do(640px) {
       padding 21px 0 0 0
     }
@@ -46,7 +52,7 @@
     max-width 940px
     display flex
     justify-content space-between
-    margin-bottom 46px
+    margin-bottom 38px
     margin-top 20px
     +do(1020px) {
       display none
@@ -54,8 +60,8 @@
   }
   &__Add-button {
     text-align center
-    margin-top 40px
-    margin-bottom 122px
+    margin-top 29px
+    margin-bottom 115px
   }
   &__Add-link {
     font-family "Roboto Condensed", sans-serif

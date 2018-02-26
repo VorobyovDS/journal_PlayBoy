@@ -1,0 +1,31 @@
+.footer-info {
+  padding-top 28px
+  max-width 940px
+  &__text {
+    font-family "Roboto", sans-serif
+    font-size 12px
+    color #535353
+    line-height 1.5
+    +do(640px) {
+      font-size 20px
+    }
+    &-wr {
+      padding 22px 0
+      border-bottom 3px solid #535353
+      border-top 3px solid #535353
+    }
+  }
+  &__title {
+    margin-bottom 30px
+    background url("../img/footer/Logo_text.png") no-repeat center
+    width 100px
+    height 15px
+    +do(640px) {
+      margin 0 auto
+      background url("../img/footer/Icon_Zayac.png") no-repeat center
+      width 100%
+      height 75px
+      padding-bottom 40px
+    }
+  }
+}

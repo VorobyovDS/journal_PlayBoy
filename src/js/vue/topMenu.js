@@ -3,12 +3,6 @@
     var button = document.querySelector(".MiniNavButton__trigger");
     var list_button = document.querySelector(".MiniNavButton__list");
     var miniIcon = document.querySelector(".MiniNavButton__icon");
-
-
-
-
-
-
     button.onclick = function (e) {
         e.preventDefault()
         if (list_button.classList.contains("MiniNavButton__list_is-visible") === true) {
@@ -35,7 +29,35 @@
     };
 
 })();
+(function search() {
+    var search = document.querySelector(".search .search__input");
+    var width_menu = document.querySelector(".Nav-Bar-Header");
+    var flag_width=false;
 
-//MiniNavButton__icon_is-visible
-//.MiniNavButton__trigger_menu-is-open
+    function resizeNav() {
+        var width = width_menu.offsetWidth;
+        search.style.width = width-90+"px"
+    }
+    function resizeBack() {
+        search.style.width = "20px"
+    }
 
+    search.onfocus = function (e) {
+        e.preventDefault()
+        resizeNav();
+        flag_width=true;
+
+    };
+    search.onblur =function (e) {
+        resizeBack();
+        flag_width=false;
+    }
+    window.onresize = function(){
+        if(flag_width==true) {
+            resizeNav();
+        }
+        else {
+            resizeBack();
+        }
+    };
+})();

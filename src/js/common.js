@@ -41,4 +41,38 @@ mediaMAX1050.addListener(function (e) {
 });
 })();
 //----------------------------
+(function footerRES () {
+    var targetFooterSedebar = document.querySelector(".footer__sidebar");
+    var footerSocial = document.querySelector(".footer-social");
+
+    var mediaMAX1050 = window.matchMedia("(max-width: 800px)");
+
+    function FooterSedebar() {
+        var element = document.querySelector('.footer__digital-magazine');
+        var clone = element.cloneNode(true);
+        element.remove(true);
+        footerSocial.appendChild(clone)
+    }
+    function reversFooterSedebar() {
+        var element = document.querySelector('.footer__digital-magazine');
+        var clone = element.cloneNode(true);
+        element.remove(true);
+
+        targetFooterSedebar.appendChild(clone)
+
+    }
+    if (mediaMAX1050.matches) {
+        FooterSedebar();
+    } else {
+        reversFooterSedebar();
+    }
+    mediaMAX1050.addListener(function (e) {
+        if(e.matches) {
+            FooterSedebar();
+
+        } else {
+            reversFooterSedebar();
+        }
+    });
+})();
 

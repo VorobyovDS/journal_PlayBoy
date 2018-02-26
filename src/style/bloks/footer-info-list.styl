@@ -1,0 +1,23 @@
+.footer-info-list {
+  display flex
+  justify-content space-between
+  margin-bottom 23px
+  max-width 634px
+  +do(640px) {
+    display none
+  }
+  &__item {
+    font-family "Roboto Condensed", sans-serif
+    font-size 16px
+    display flex
+    flex-direction column
+  }
+  &__link {
+    display inline-block
+    margin-bottom 12px
+    &:hover {
+      transform scale(1.1)
+      color $color-hover-text
+    }
+  }
+}

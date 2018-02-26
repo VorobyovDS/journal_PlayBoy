@@ -1,0 +1,52 @@
+
+.footer-social {
+  margin-top 17px
+  padding-bottom 20px
+  display flex
+  justify-content space-between
+  align-items center
+  +do(840px) {
+    flex-direction column-reverse
+  }
+  &__wr {
+    display flex
+    align-items center
+    +do(640px) {
+      flex-direction column
+    }
+  }
+  &__age {
+
+    display inline-block
+    font-family "Roboto Condensed", sans-serif
+    font-size 24px
+    font-weight 300
+    color #ff0044
+    border solid 1px #ff0044
+    padding 12px
+    +do(640px) {
+      margin 35px 0 22px 0
+    }
+
+  }
+  &__copy{
+    margin-left 24px
+    font-family "Roboto",sans-serif
+    font-size 12px
+    color #535353
+    +do(640px) {
+      font-size 18px
+    }
+  }
+  &__link {
+    font-size 12px
+    color #535353
+    border-bottom 1px solid #535353
+    +do(640px) {
+      font-size 18px
+    }
+    &:hover {
+      color #a3a3a3
+    }
+  }
+}

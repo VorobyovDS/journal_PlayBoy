@@ -51,10 +51,12 @@
       }
 
       &_b1 {
+        margin-right 5px
         +do(640px) {
-        padding 16px 15px 25px 15px
-        border-bottom 1px solid #cccccc
-        border-top 1px solid #cccccc
+          padding 16px 15px 25px 15px
+          border-bottom 1px solid #cccccc
+          border-top 1px solid #cccccc
+          margin-right 0
         }
       }
       &_b2 {
@@ -100,7 +102,11 @@
       padding 0 20px 22px 20px
       border 1px solid #cccccc
       margin 20px 0
+      +do(1024px) {
+        margin 47px 0 20px 0
+      }
       +do(640px) {
+        margin 20px 0
         padding 25px 47px
         border none
       }
@@ -139,8 +145,12 @@
       position relative
       overflow hidden
       &_size {
-        margin-right 25px
-        flex 0 0 143px
+        //margin-right 25px
+
+        +do(640px) {
+          margin-right 25px
+          flex 0 0 143px
+        }
       }
       &_video {
         +do(640px) {
@@ -212,6 +222,10 @@
         bottom 15%
         left 6%
         position absolute
+        +do(640px) {
+          bottom 7%
+          left 9%
+        }
       }
       &_video {
         margin-left 20px
@@ -246,6 +260,9 @@
       position absolute
       bottom -8px
       transition 1s
+      +do(640px) {
+        width 14%
+      }
     }
     &_size {
     +do(640px) {

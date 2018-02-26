@@ -1,0 +1,39 @@
+
+.footer-social-icon {
+  display flex
+  justify-content space-between
+  order 3
+  width 147px
+  +do(640px) {
+    margin-top 69px
+    width 310px
+  }
+  +do(800px) {
+    margin-bottom 20px
+  }
+  +do(640px) {
+    margin-bottom 71px
+  }
+  &__img {
+
+    &:hover {
+      transform scale(1.2)
+      +do(640px) {
+
+        transform scale(2)
+      }
+    }
+    +do(640px) {
+      transform scale(1.9)
+    }
+    &-wr {
+      &:not(:first-child) {
+        margin-left 10px
+      }
+      &:last-child {
+        margin-right 10px
+      }
+    }
+  }
+
+}
