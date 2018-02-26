@@ -9,8 +9,9 @@
       bottom 2%
       max-width 795px
       +do(640px) {
-        left 5%
-        right 5%
+        left 9%
+        right 4%
+        bottom 6%
       }
     }
     &_video {
@@ -83,10 +84,13 @@
     transition 0.3s
     display inline-block
     +do(640px) {
-      font-size 32px
+      font-size 60px
     }
     +do(480px) {
-      font-size 24px
+      font-size 48px
+    }
+    +do(380px) {
+      font-size 30px
     }
     &_video {
       font-family "Roboto Condensed", sans-serif
@@ -120,6 +124,14 @@
     font-weight normal
     font-size 18px
     word-wrap normal
+    +do(640px) {
+      font-size 32px
+      line-height 1
+    }
+    +do(480px) {
+      font-size 24px
+    }
+
     &-wr {
 
       margin-bottom 20px

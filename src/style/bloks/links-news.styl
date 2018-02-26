@@ -10,10 +10,17 @@
   border 1px solid #000000
   margin-right 2%
   min-height 420px
+  line-height 1.2
   +do(810px) {
     max-width 100%
     border none
     font-size 32px
+  }
+  +do(640px) {
+    padding-left 64px
+  }
+  +do(380px) {
+    padding-left 32px
   }
 
 
@@ -33,7 +40,7 @@
   }
   &__item {
 
-      margin-bottom 13px
+      margin-bottom 18px
       &_title {
         font-family "Roboto Slab", sans-serif
         font-weight 700

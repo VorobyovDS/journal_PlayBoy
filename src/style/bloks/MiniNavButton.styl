@@ -67,6 +67,7 @@
     }
     +do(640px){
       width 100%
+
     }
     &-lvl-wr {
       display flex
@@ -90,15 +91,25 @@
     font-weight 300
     font-size 36px
     text-align left
-    margin-left 40px
+    margin-left 9px
     margin-bottom 20px
     +do(640px) {
-      margin-bottom 46px
+
+      margin-bottom 37px
       padding 0 0 0 14%
     }
     &_title {
       font-family "Roboto Slab",sans-serif
       font-weight 700
+      text-transform uppercase
+      +do(640px) {
+        margin-bottom 40px
+      }
+      &_top {
+        +do(640px) {
+          margin-top 50px
+        }
+      }
     }
 
     &_avatar {
@@ -108,6 +119,7 @@
       align-items center
       padding-top 75px
       padding-bottom 75px
+      margin-bottom 64px
       &:after {
         position absolute
         bottom 0
@@ -186,14 +198,14 @@
       background: #ffffff;
       margin-left: -23.5px;
       width 0
+      left: 38%
       &:before, &:after {
         content: '';
         position: absolute;
-        left: 0;
-        width: 47px;
+       // width: 47px;
+        width: 70px
         height: 100%;
         /* Force Hardware Acceleration in WebKit */
-        transform: translateZ(0);
         backface-visibility: hidden;
         transition: transform 0.3s, background 0s;
       }
